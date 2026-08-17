@@ -1,0 +1,15 @@
+[package]
+name = "Calculator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.29.1"
+egui = "0.29.1"
+arboard = "3.4"
+image = { version = "0.25", default-features = false, features = ["ico", "png"] }
+
+
+# build.rs এর জন্য আলাদা ডিপেনডেন্সি ব্লক
+[build-dependencies]
+winres = "0.1"
